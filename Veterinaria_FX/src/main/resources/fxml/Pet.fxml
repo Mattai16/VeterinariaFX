@@ -101,12 +101,12 @@
                         <Insets left="25.0" right="25.0" />
                     </VBox.margin>
                 </HBox>
-                <ComboBox fx:id="cbRolePet" prefHeight="30.0" prefWidth="246.0" promptText="Select sex">
+                <ComboBox fx:id="cbRolePet" prefHeight="30.0" prefWidth="246.0" promptText="Seleciona estado">
                     <VBox.margin>
                         <Insets left="25.0" />
                     </VBox.margin>
                 </ComboBox>
-                <TextField fx:id="emailPet" prefHeight="30.0" prefWidth="246.0" promptText="Nombre dueño">
+                <TextField fx:id="emailPet" prefHeight="30.0" prefWidth="246.0" promptText="Email del dueño">
                     <VBox.margin>
                         <Insets left="25.0" right="25.0" />
                     </VBox.margin></TextField>
@@ -183,8 +183,8 @@
                         <TableColumn fx:id="colLastNamePet" maxWidth="4000.0" prefWidth="75.0" text="Raza" />
                         <TableColumn fx:id="colDOBPet" maxWidth="4000.0" prefWidth="75.0" text="Fecha registro" />
                         <TableColumn fx:id="colGenderPet" maxWidth="4000.0" prefWidth="60.0" text="Sexo" />
-                        <TableColumn fx:id="colRolePet" maxWidth="4000.0" prefWidth="75.0" text="Sexo" />
-                        <TableColumn fx:id="colEmailPet" maxWidth="6000.0" prefWidth="130.0" text="Nombre dueño" />
+                        <TableColumn fx:id="colRolePet" maxWidth="4000.0" prefWidth="75.0" text="Estado" />
+                        <TableColumn fx:id="colEmailPet" maxWidth="6000.0" prefWidth="130.0" text="Email del dueño" />
                         <TableColumn fx:id="colEditPet" maxWidth="3500.0" prefWidth="75.0" text="Editar" />
                     </columns>
                     <VBox.margin>
@@ -205,4 +205,3 @@
         </VBox>
     </center>
 </BorderPane>
-

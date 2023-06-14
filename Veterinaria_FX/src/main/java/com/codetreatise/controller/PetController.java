@@ -128,7 +128,7 @@ public class PetController implements Initializable{
     private PetService petService;
 
     private ObservableList<Pet> petList = FXCollections.observableArrayList();
-    private ObservableList<String> roles = FXCollections.observableArrayList("Macho", "Embra");
+    private ObservableList<String> roles = FXCollections.observableArrayList("Vivo", "Muerto");
 
     @FXML
     private void exit(ActionEvent event) {
@@ -199,7 +199,7 @@ public class PetController implements Initializable{
         Alert alert = new Alert(AlertType.CONFIRMATION);
         alert.setTitle("Confirmation Dialog");
         alert.setHeaderText(null);
-        alert.setContentText("Are you sure you want to delete selected?");
+        alert.setContentText("Estas seguro de elimnarla?");
         Optional<ButtonType> action = alert.showAndWait();
 
         if(action.get() == ButtonType.OK) petService.deleteInBatch(pets);
@@ -222,9 +222,9 @@ public class PetController implements Initializable{
     private void saveAlert(Pet user){
 
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("User saved successfully.");
+        alert.setTitle("Exito.");
         alert.setHeaderText(null);
-        alert.setContentText("The user "+user.getFirstName()+" "+user.getLastName() +" has been created and \n"+getGenderTitle(user.getGender())+" id is "+ user.getId() +".");
+        alert.setContentText("La mascota "+user.getFirstName()+" "+user.getLastName() +" ha sido creada \n"+getGenderTitle(user.getGender())+" su id es: "+ user.getId() +".");
         alert.showAndWait();
     }
 
@@ -238,7 +238,7 @@ public class PetController implements Initializable{
     }
 
     private String getGenderTitle(String gender){
-        return (gender.equals("Male")) ? "his" : "her";
+        return (gender.equals("Male")) ? "" : "";
     }
 
     public String getFirstName() {
