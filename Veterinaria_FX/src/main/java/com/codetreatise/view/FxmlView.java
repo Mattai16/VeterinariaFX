@@ -27,6 +27,18 @@ public enum FxmlView {
         }
     },
 
+    SHOP {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("shop.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/Tienda.fxml";
+        }
+    },
+
     PET {
         @Override
         public String getTitle() {

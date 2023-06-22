@@ -433,4 +433,14 @@ public class UserController implements Initializable{
 
 
 	}
+
+	@FXML
+	private void onClickProduct(ActionEvent event) throws IOException{
+
+		stageManager.switchScene(FxmlView.SHOP);
+
+
+	}
+
+
 }

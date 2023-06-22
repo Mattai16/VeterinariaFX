@@ -199,6 +199,14 @@
                </ContextMenu>
             </contextMenu>
          </TableView>
+         <Button fx:id="btnLogout1" mnemonicParsing="false" onAction="#onClickProduct" prefHeight="27.0" prefWidth="112.0" styleClass="background" text="Productos" textFill="#fff9f9" textOverrun="CLIP">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" color="#00000091" />
+            </effect>
+         </Button>
       </VBox>
    </center>
 </BorderPane>
